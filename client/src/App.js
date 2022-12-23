@@ -24,52 +24,56 @@ const client = new ApolloClient({
 
 // Esta es mi app.js que mas menos servia
 
-function App() {
-  return (
-    <ApolloProvider client={client}>
-      <Router>
-        <div>
-          <Header />
-          <Switch>
-
-            <Home />
-
-            <p> Hello there this is working!
-              Este es App.js </p>
-
-
-            <Route exact path="/" comoponent={Home} />
-            <Route exact path="/Login" component={Login} />
-            <Route exact path="/Signup" comoponent={Signup} />
-
-            </Switch>
-            </div>
-            <Footer />
-            </Router>
-            </ApolloProvider>
-  );
-} 
-
 // function App() {
 //   return (
 //     <ApolloProvider client={client}>
 //       <Router>
-//         <div className='flex-column justify-flex-start min-100-vh'>
+//         <div>
 //           <Header />
-//           <div className='container'>
-//             <Switch>
+//             <Home />
+//           <Switch>
 
-//               <Route exact path='/' component={Home} />
-//               <Route exact path='/login' component={Login} />
-//               <Route exact path='/signup' component={Signup} />
+//             <p> Hello there this is working!
+//               Este es App.js </p>
+
+
+//             <Route  path="/" element={Home} />
+//             <Route path="/login" element={Login} />
+//             Login
+//             <p> Esto es entre los botones de login y signup</p>
+//             <Route exact path="/signup" comoponent={Signup} />
+//             Signup
+
+
 
 //             </Switch>
-//           </div>
-//           <Footer />
-//         </div>
-//       </Router>
-//     </ApolloProvider>
+//             </div>
+//             <Footer />
+//             </Router>
+//             </ApolloProvider>
 //   );
-// }
+// } 
+
+function App() {
+  return (
+    <ApolloProvider client={client}>
+      <Router>
+        <div className='flex-column justify-flex-start min-100-vh'>
+          <Header />
+          <div className='container'>
+            <Switch>
+
+              <Route exact path='/' component={Home} />
+              <Route exact path='/login' component={Login} />
+              <Route exact path='/signup' component={Signup} />
+
+            </Switch>
+          </div>
+          <Footer />
+        </div>
+      </Router>
+    </ApolloProvider>
+  );
+}
 
 export default App;

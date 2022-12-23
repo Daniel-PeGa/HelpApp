@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 0%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -25,12 +25,18 @@ code {
 }
 
 .LoginSignup {
-  display: flex;
+  display: flex-end;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+  margin: 1%;
 }
 
 .headerBtn{
   margin: 1%;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
 }
