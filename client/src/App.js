@@ -22,6 +22,8 @@ const client = new ApolloClient({
     uri: '/graphql'
 });
 
+// Esta es mi app.js que mas menos servia
+
 function App() {
   return (
     <ApolloProvider client={client}>
@@ -30,9 +32,15 @@ function App() {
           <Header />
           <Switch>
 
-            <Route exact path="/" component={Home} />
-            <Route exact path="/login" component={Login} />
-            <Route exact path="/signup" component={Signup} />
+            <Home />
+
+            <p> Hello there this is working!
+              Este es App.js </p>
+
+
+            <Route exact path="/" comoponent={Home} />
+            <Route exact path="/Login" component={Login} />
+            <Route exact path="/Signup" comoponent={Signup} />
 
             </Switch>
             </div>
@@ -41,5 +49,27 @@ function App() {
             </ApolloProvider>
   );
 } 
+
+// function App() {
+//   return (
+//     <ApolloProvider client={client}>
+//       <Router>
+//         <div className='flex-column justify-flex-start min-100-vh'>
+//           <Header />
+//           <div className='container'>
+//             <Switch>
+
+//               <Route exact path='/' component={Home} />
+//               <Route exact path='/login' component={Login} />
+//               <Route exact path='/signup' component={Signup} />
+
+//             </Switch>
+//           </div>
+//           <Footer />
+//         </div>
+//       </Router>
+//     </ApolloProvider>
+//   );
+// }
 
 export default App;
