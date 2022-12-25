@@ -47,6 +47,30 @@ code {
   margin: 5%;
 }
 
+.categoriesCards {
+  display: flex;
+  flex-direction: row;
+}
+
+.eachCard {
+  margin: 1%;
+  height: 350px;
+  width: 30%;
+}
+
+.cardPhoto {
+  max-height: 50%;
+}
+
+.buttonGo {
+  width: 100%;
+}
+
+.nameNBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 @media screen and (max-width: 600px) {
   .topnav a {

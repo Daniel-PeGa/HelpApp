@@ -9,6 +9,8 @@ import Footer from './components/Footer';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 
+import Landscaping from './pages/Landscaping'
+
 const client = new ApolloClient({
   request: operation => {
     const token = localStorage.getItem('id_token');
@@ -66,6 +68,7 @@ function App() {
               <Route exact path='/' component={Home} />
               <Route exact path='/login' component={Login} />
               <Route exact path='/signup' component={Signup} />
+              <Route exact path='/landscaping' component={Landscaping} />
 
 
             </Switch>
