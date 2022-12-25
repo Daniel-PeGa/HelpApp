@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Auth from '../../utils/auth';
 
-import Login from '../../pages/Login';
-import Signup from '../../pages/Signup';
+// import Login from '../../pages/Login';
+// import Signup from '../../pages/Signup';
 
 
 const Header = () => {
@@ -46,10 +46,10 @@ const Header = () => {
     // };
 
     return (
-        <header className="">
+        <header className="containerNav">
           <div className="headerNav">
             <Link to='/'>
-              <h1>Help App</h1>
+              <h1 className="headerTitle">Help App</h1>
             </Link>
             <nav className='text-center'>
               {Auth.loggedIn() ? (
@@ -60,8 +60,12 @@ const Header = () => {
               ) : (
                   <>
                   <div className="LoginSignup">
-                    <Link to='/login' className="headerBtn">Login</Link>
-                    <Link to='/signup' className="headerBtn">Signup</Link>
+                    <button className="headerBtn">
+                    <Link to='/login'>Login</Link>
+                    </button>
+                    <button className="headerBtn">
+                    <Link to='/signup'>Signup</Link>
+                    </button>
                   </div>
                   </>
                 )}

@@ -24,15 +24,29 @@ code {
   align-items: center;
 }
 
-.LoginSignup {
-  display: flex-end;
-  flex-direction: row;
-  margin: 1%;
+.headerTitle{
+  margin: 5%;
 }
 
-.headerBtn{
-  margin: 1%;
+.containerNav{
+  margin: var(--spacing-four);
+  padding-top: var(--spacing-two);
+  padding-bottom: var(--spacing-two);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgb(81, 81, 255);
 }
+
+.LoginSignup {
+  display: flex-end;
+}
+
+
+.headerBtn{
+  margin: 5%;
+}
+
 
 @media screen and (max-width: 600px) {
   .topnav a {
