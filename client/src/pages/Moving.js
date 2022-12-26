@@ -1,19 +1,19 @@
 import React from 'react';
 
-const landscapingServices = [
+const movingServices = [
     {
         id: 0,
-        title: "hardcoded Landscaping services Company Name",
-        description: "hardcoded Landscaping services description"
+        title: "hardcoded Moving services Company Name",
+        description: "hardcoded Moving services description"
     }
 ]
 
-function Landscaping() {
+function Moving() {
     return (
         <div className="serviceContainer">
-            <h1>Landscaping</h1>
+            <h1>Moving</h1>
             <div>
-                {landscapingServices.map((service) => (
+                {movingServices.map((service) => (
                     <div key={service.id}>
                         <h2 className="serviceContent">{service.title}</h2>
                         <p className="serviceContent">{service.description}</p>
@@ -24,4 +24,4 @@ function Landscaping() {
     )
 }
 
-export default Landscaping;
+export default Moving;

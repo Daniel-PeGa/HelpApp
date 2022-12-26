@@ -9,7 +9,13 @@ import Footer from './components/Footer';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 
-import Landscaping from './pages/Landscaping'
+import Landscaping from './pages/Landscaping';
+import Cleaning from './pages/Cleaning';
+import Handy from './pages/Handy';
+import Electrical from './pages/Electrical';
+import Moving from './pages/Moving';
+import Pest from './pages/Pest';
+
 
 const client = new ApolloClient({
   request: operation => {
@@ -60,7 +66,7 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-        <div className='flex-column justify-flex-start min-100-vh'>
+        <div className='flex-column justify-flex-start min-100-vh h-100'>
           <Header />
           <div className='container'>
             <Switch>
@@ -69,6 +75,11 @@ function App() {
               <Route exact path='/login' component={Login} />
               <Route exact path='/signup' component={Signup} />
               <Route exact path='/landscaping' component={Landscaping} />
+              <Route exact path='/cleaning' component={Cleaning} />
+              <Route exact path='/handy' component={Handy} />
+              <Route exact path='/electrical' component={Electrical} />
+              <Route exact path='/moving' component={Moving} />
+              <Route exact path='/pest' component={Pest} />
 
 
             </Switch>
