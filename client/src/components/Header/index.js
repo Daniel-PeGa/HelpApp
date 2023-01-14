@@ -46,34 +46,59 @@ const Header = () => {
     // };
 
     return (
-        <header className="containerNav">
-          <div className="headerNav">
-            <div className="headerName">
-            <Link to='/'>
-              <h1 className="headerTitle">HelpApp</h1>
-            </Link>
+        // <header className="containerNav">
+        //   <div className="headerNav">
+        //     <div className="headerName">
+        //     <Link to='/'>
+        //       <h1 className="headerTitle">HelpApp</h1>
+        //     </Link>
+        //     </div>
+        //     <nav className='text-center'>
+        //       {Auth.loggedIn() ? (
+        //         <>
+        //           <Link to='/profile'>Me</Link>
+        //           <a href="/" onClick={logout}>Logout</a>
+        //         </>
+        //       ) : (
+        //           <>
+        //           <div className="LoginSignup">
+        //             <button className="headerBtn">
+        //             <Link to='/login'>Login</Link>
+        //             </button>
+        //             <button className="headerBtn">
+        //             <Link to='/signup'>Signup</Link>
+        //             </button>
+        //           </div>
+        //           </>
+        //         )}
+        //     </nav>
+        //   </div>
+        // </header>
+
+        <header>
+          <Link to='/'>
+            <h1 className="titleName">HelpApp</h1>
+          </ Link>
+
+          {Auth.loggedIn() ? (
+            <>
+            <Link to='/profile'>Me</Link>
+            <a href="/" onClick={logout}>Logout</a>
+            </>
+          ) : (
+            <>
+            <div>
+            <button className="headerBtn">
+            <Link to='/login' className="btnText">Login</ Link>
+            </button>
+            <button className="headerBtn">
+            <Link to='/signup' className="btnText">Signup</ Link>
+            </button>
             </div>
-            <nav className='text-center'>
-              {Auth.loggedIn() ? (
-                <>
-                  <Link to='/profile'>Me</Link>
-                  <a href="/" onClick={logout}>Logout</a>
-                </>
-              ) : (
-                  <>
-                  <div className="LoginSignup">
-                    <button className="headerBtn">
-                    <Link to='/login'>Login</Link>
-                    </button>
-                    <button className="headerBtn">
-                    <Link to='/signup'>Signup</Link>
-                    </button>
-                  </div>
-                  </>
-                )}
-            </nav>
-          </div>
+            </>
+          )}
         </header>
+
       );
     };
       
