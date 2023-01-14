@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(0, 68, 255, 0.657);
 }
 
 code {
@@ -22,10 +23,19 @@ code {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  height: auto;
+  padding-top: 5px;
+}
+
+.headerName {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1%;
 }
 
 .headerTitle{
-  margin: 5%;
+  margin: 1%;
 }
 
 .containerNav{
@@ -33,13 +43,22 @@ code {
   padding-top: var(--spacing-two);
   padding-bottom: var(--spacing-two);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  background-color: rgb(81, 81, 255);
+  justify-content: center;
+  background-color: rgba(255, 0, 0, 0.865);
+}
+
+h1 {
+  color: black;
 }
 
 .LoginSignup {
-  display: flex-end;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-items: end;
+  margin: auto;
 }
 
 
@@ -52,7 +71,7 @@ code {
   flex-direction: row;
   margin: 3%;
   align-content: center;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 

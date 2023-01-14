@@ -48,9 +48,11 @@ const Header = () => {
     return (
         <header className="containerNav">
           <div className="headerNav">
+            <div className="headerName">
             <Link to='/'>
-              <h1 className="headerTitle">Help App</h1>
+              <h1 className="headerTitle">HelpApp</h1>
             </Link>
+            </div>
             <nav className='text-center'>
               {Auth.loggedIn() ? (
                 <>

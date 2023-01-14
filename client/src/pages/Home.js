@@ -2,8 +2,9 @@ import React from 'react';
 // import { useQuery } from '@apollo/react-hooks';
 // import { QUERY_USER } from '../utils/queries';
 import Auth from '../utils/auth';
-
 import { Link } from 'react-router-dom';
+// import { GoogleMap, useLoadScript, Marker, InfoWindow } from '@react-google-maps/api';
+
 
 
 const Home = () => {
@@ -41,6 +42,13 @@ const Home = () => {
             </>
         )}
 
+        <div id="map">Map</div>
+
+        <button>
+            <Link to='/map'>MAP!</Link>
+        </button>
+
+        <hr />
 
         <div className="categoriesCards">
 
@@ -112,7 +120,10 @@ const Home = () => {
 
         </div>
 
-
+        <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+      defer
+    ></script>
 
         </div>
     );

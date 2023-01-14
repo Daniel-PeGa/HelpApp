@@ -16,6 +16,8 @@ import Electrical from './pages/Electrical';
 import Moving from './pages/Moving';
 import Pest from './pages/Pest';
 
+import Map from './pages/Map';
+
 
 const client = new ApolloClient({
   request: operation => {
@@ -80,6 +82,7 @@ function App() {
               <Route exact path='/electrical' component={Electrical} />
               <Route exact path='/moving' component={Moving} />
               <Route exact path='/pest' component={Pest} />
+              <Route exact path='/map' component={Map} />
 
 
             </Switch>
