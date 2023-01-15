@@ -53,7 +53,7 @@ const Home = () => {
         <div className="categoriesCards">
 
         <div class="card eachCard">
-        <img src="./img/landscaping.jpeg" class="card-img-top cardPhoto" alt="landscaping" />
+        <img src="./img/landscaping.jpeg" className="card-img-top cardPhoto" alt="landscaping" />
         <div class="card-body nameNBtn">
             <h5 class="card-title">Landscaping</h5>
             <button className="btn btn-primary buttonGo">
@@ -63,7 +63,7 @@ const Home = () => {
         </div>
 
         <div class="card eachCard">
-        <img src="./img/cleaningNMaid.jpeg" class="card-img-top cardPhoto" alt="House and cleaning services" />
+        <img src="./img/cleaningNMaid.jpeg" className="card-img-top cardPhoto" alt="House and cleaning services" />
         <div class="card-body nameNBtn">
             <h5 class="card-title">Cleaning & Maid Services</h5>
             <button className="btn btn-primary buttonGo">
@@ -73,7 +73,7 @@ const Home = () => {
         </div>
 
         <div class="card eachCard">
-        <img src="./img/electricians.jpeg" class="card-img-top cardPhoto" alt="Electrical services" />
+        <img src="./img/electricians.jpeg" className="card-img-top cardPhoto" alt="Electrical services" />
         <div class="card-body nameNBtn">
             <h5 class="card-title">Electrical Services</h5>
             <button className="btn btn-primary buttonGo">
@@ -88,7 +88,7 @@ const Home = () => {
 
 
         <div class="card eachCard">
-        <img src="./img/handyMan.jpeg" class="card-img-top cardPhoto" alt="Handy man" />
+        <img src="./img/handyMan.jpeg" className="card-img-top cardPhoto" alt="Handy man" />
         <div class="card-body nameNBtn">
             <h5 class="card-title">Handy Man</h5>
             <button className="btn btn-primary buttonGo">
@@ -98,7 +98,7 @@ const Home = () => {
         </div>
 
         <div class="card eachCard">
-        <img src="./img/moving.jpeg" class="card-img-top cardPhoto" alt="Moving Services" />
+        <img src="./img/moving.jpeg" className="card-img-top cardPhoto" alt="Moving Services" />
         <div class="card-body nameNBtn">
             <h5 class="card-title">Moving Services</h5>
             <button className="btn btn-primary buttonGo">
@@ -108,7 +108,7 @@ const Home = () => {
         </div>
 
         <div class="card eachCard">
-        <img src="./img/pestControl.jpeg" class="card-img-top cardPhoto" alt="Pest Control" />
+        <img src="./img/pestControl.jpeg" className="card-img-top cardPhoto" alt="Pest Control" />
         <div class="card-body nameNBtn">
             <h5 class="card-title">Pest Control</h5>
             <button className="btn btn-primary buttonGo">
